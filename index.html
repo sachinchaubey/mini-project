@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<title>Cafe Template</title>
+
+<!-- fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata"> -->
+<link rel="stylesheet" href="css">
+
+<body>
+
+<!-- Links (sit on top) -->
+<div class="top">
+  <div class="row padding black">
+    <div class="col s3">
+      <a href="#" class="button block black">HOME</a>
+    </div>
+    <div class="col s3">
+      <a href="#about" class="button block black">ABOUT</a>
+    </div>
+    <div class="col s3">
+      <a href="#menu" class="button block black">MENU</a>
+    </div>
+    <div class="col s3">
+      <a href="#where" class="button block black">WHERE</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg display-container grayscale-min" id="home">
+  <div class="display-bottomleft center padding-large hide-small address">
+    <span class="tag"></span>
+  </div>
+  <div class="display-middle center h1">
+    <span class="text-white ">Coffee point</span>
+  </div>
+  <div class="display-bottomright  center  padding-large ">
+    <span class="text-white"></span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="sand grayscale large">
+
+<!-- About Container -->
+<div class="container" id="about">
+  <div class=" content" style="max-width:700px">
+    <h5 class=" center  padding-64"><span class=" tag  wide">ABOUT THE CAFE</span></h5>
+    <p class="intro-1 intro">The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p class="intro-1 ">In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+    <div class=" panel  leftbar  light-grey">
+      <p class="thought"><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
+      <p class="chef">Chef, Coffeeist and Owner: Liam Brown</p>
+    </div>
+    <img src="image/coffeeshop.jpg" style="width:100%;max-width:1000px" class=" margin-top">
+    <p class="hours"><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
+    <p class="hours"><strong>Address:</strong> 15 Adr street, 5015, NY</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class=" container" id="menu">
+  <div class=" content" style="max-width:700px">
+ 
+    <h5 class=" center  padding-48"><span class=" tag  wide">THE MENU</span></h5>
+  
+    <div class=" row  center  card  padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class=" col s6 tablink dark-grey">Eat</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class=" col s6 tablink drink">Drink</div>
+      </a>
+    </div>
+    <div id="Eat" class=" container menu  padding-48  card">
+      <h3>Bread Basket</h5>
+      <p class=" text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+    
+      <h3>Honey Almond Granola with Fruits</h5>
+      <p class=" text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+    
+      <h3>Belgian Waffle</h5>
+      <p class=" text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+    
+      <h3>Scrambled eggs</h5>
+      <p class=" text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+    
+      <h3>Blueberry Pancakes</h3>
+      <p class=" text-grey">With syrup, butter and lots of berries 8.50</p>
+    </div>
+
+    <div id="Drinks" class=" container menu  padding-48  card">
+      <h3>Coffee</h3>
+      <p class=" text-grey">Regular coffee 2.50</p><br>
+    
+      <h3>Chocolato</h3>
+      <p class=" text-grey">Chocolate espresso with milk 4.50</p><br>
+    
+      <h3>Corretto</h3>
+      <p class=" text-grey">Whiskey and coffee 5.00</p><br>
+    
+      <h3>Iced tea</h3>
+      <p class=" text-grey">Hot tea, except not hot 3.00</p><br>
+    
+      <h3>Soda</h3>
+      <p class=" text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+    </div>  
+    <img src="image/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class=" container" id="where" style="padding-bottom:32px;">
+  <div class=" content" style="max-width:700px">
+    <h5 class=" center  padding-48"><span class=" tag  wide">WHERE TO FIND US</span></h5>
+    <p class="address">Find us at some address at some place.</p>
+    <img src="image/map.jpg" class=" image" style="width:100%">
+    <p><span class="wide tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p class="last"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form action="" target="">
+      <p class="form""><input class=" input  padding-16  border" type="text" placeholder="Name" required name="Name"></p>
+      <p class="form"><input class=" input  padding-16  border" type="number" placeholder="How many people" required name="People"></p>
+      <p class="form"><input class=" input  padding-16  border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p class="form"><input class=" input  padding-16  border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p class="form"><button class=" button  black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class=" center  light-grey  padding-48  large">
+<p class="footer">Represented by @Sachin chaubey</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace("  dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += "  dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
+
